@@ -8,8 +8,8 @@ color:${({primary})=> primary ? '#0F298B' : 'inherit'};
 `
 export const SubHeading = styled.p`
 font-weight: 500;
-font-size: 36px;
-line-height: 46px;
+font-size: ${({size})=> size ? size : '36px'};
+line-height: ${({size})=> size ? '41px' : '46px'};
 color:${({primary})=> primary ? '#0F298B' : 'inherit'};
 `
 export const Title = styled.p`
