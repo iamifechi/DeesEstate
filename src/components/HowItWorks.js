@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Section, Container } from './Reusable.styled'
+import { Section, Container, Card as CardContainer } from './Reusable.styled'
 import {SubHeading , Text} from './Text.styled'
 import {Location, Lock, House} from '../assets/'
 
@@ -56,16 +56,29 @@ margin:1em auto;
 
 `
 
-const Card = styled(Container)`
+const Card = styled(CardContainer)`
 justify-content: space-evenly;
 align-items: center;
 padding: 3em;
 width: 438px;
 height: 539px;
-background: #FFFFFF;
-box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
 text-align:center;
+border-radius:0;
 `
 
 const Image = styled.img`
+position:relative;
+
+&::after{
+  position:absolute;
+  content:"";
+  height:400px;
+  width:70px;
+  border-radius:50%;
+  background:#0F298B;
+  color:black;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
 `

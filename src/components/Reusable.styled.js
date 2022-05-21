@@ -51,7 +51,16 @@ export const Container = styled.div`
    } */
 
 `
+export const Card = styled(Container)`
+background: #FFFFFF;
+border-radius: 18.6868px;
+padding:18.6868px ;
+align-items: flex-start;
 
+&:hover{
+    box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+}
+`
 export const TextWrapper = styled(Container)`
 padding:0;
 justify-content:space-evenly;

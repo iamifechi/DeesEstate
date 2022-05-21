@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Section, Container, Button as BTN } from './Reusable.styled'
+import { Section, Container, Card as CardContainer ,Button as BTN } from './Reusable.styled'
 import {SubHeading , Title, Text, SmallText} from './Text.styled'
-import {Ivy, Rexona, Palace} from '../assets/index'
 
 export default function Testimonials() {
   return (
@@ -12,10 +11,10 @@ export default function Testimonials() {
     >
       <TextWrapper flex column>
         <SubHeading bold size='48px' margin="7px auto" primary>
-        Our Featured Properties.
+        Testimonials
         </SubHeading>
         <Text large>
-        One of our biggest product to be featured and that has sold out the most.
+        This is what our clients are saying.
         </Text>
         
       </TextWrapper>
@@ -23,39 +22,33 @@ export default function Testimonials() {
       <Button>View More</Button>
 
       <Container flex Justify="Space-between">
-          <Card flex column>
-            <Image src={Palace} alt='The Palace'/>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>The Palace</SubHeading>
-                <SmallText>Duplex</SmallText>
-            </Container>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
-                <SmallText primary>$2,000</SmallText>
-            </Container>
-          </Card>
-          <Card flex column>
-            <Image src={Ivy} alt='Ivy Rory'/>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>Ivy Rory</SubHeading>
-                <SmallText>Duplex</SmallText>
-            </Container>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
-                <SmallText primary>$2,000</SmallText>
-            </Container>      
-          </Card>
-          <Card flex column>
-            <Image src={Rexona} alt='Rexona'/>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>Rexona</SubHeading>
-                <SmallText >Duplex</SmallText>
-            </Container>
-            <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
-                <SmallText primary>$2,000</SmallText>
-            </Container>
-          </Card>
+        <Card flex column>
+            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SmallText bold FTN2>South Africa</SmallText>
+            <SmallText size ='22.24242px' blur>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Fames ut dictumst urna, 
+                lorem nibh. Pretium leo hendrerit interdum netus
+            </SmallText>
+        </Card>
+        <Card flex column>
+            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SmallText bold FTN2>South Africa</SmallText>
+            <SmallText size ='22.24242px' blur>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Fames ut dictumst urna, 
+                lorem nibh. Pretium leo hendrerit interdum netus
+            </SmallText>
+        </Card>
+        <Card flex column>
+            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SmallText bold FTN2>South Africa</SmallText>
+            <SmallText size ='22.24242px' blur>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Fames ut dictumst urna, 
+                lorem nibh. Pretium leo hendrerit interdum netus
+            </SmallText>
+        </Card>
 
       </Container>
      
@@ -72,22 +65,10 @@ max-width:954px;
 text-align:center;
 `
 
-const Card = styled(Container)`
-justify-content: center;
-align-items: flex-start;
-padding:1em;
-max-width: 415.49px;
-height: 330.48px;
-background: #FFFFFF;
-box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
-border-radius: 0px 39.7214px;
-padding:7.94427px 1em;
-padding:7.94427px 15.8885px 14.2997px 38.9269px;
-`
-
-const Image = styled.img`
-width:100%;
-margin-bottom:1em;
+const Card = styled(CardContainer)`
+justify-content: space-between;
+max-width: 453.15px;
+height: 238.09px;
 `
 
 const Button = styled(BTN)`

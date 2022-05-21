@@ -41,8 +41,8 @@ text-align:center;
         text-decoration:underline;
     }
 `
-const Logo = styled.div`
-background:url(${logo}) no-repeat #E5E5E5;
+export const Logo = styled.div`
+background:url(${logo}) no-repeat;
 background-size:contain;
 background-position:center;
 width: 165px;

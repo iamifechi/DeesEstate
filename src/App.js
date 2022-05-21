@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/AboutUs';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AboutUs/>
       <Features/>
       <Testimonials/>
+      <Footer/>
     </>
   );
 }

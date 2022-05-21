@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Section, Container, Button as BTN } from './Reusable.styled'
-import {SubHeading , Title, Text, SmallText} from './Text.styled'
+import { Section, Container,  Card as CardContainer , Button as BTN } from './Reusable.styled'
+import {SubHeading , Text, SmallText} from './Text.styled'
 import {Ivy, Rexona, Palace} from '../assets/index'
 
 export default function Features() {
@@ -72,16 +72,11 @@ max-width:954px;
 text-align:center;
 `
 
-const Card = styled(Container)`
+const Card = styled(CardContainer)`
 justify-content: center;
-align-items: flex-start;
-padding:1em;
 max-width: 415.49px;
 height: 330.48px;
-background: #FFFFFF;
-box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
 border-radius: 0px 39.7214px;
-padding:7.94427px 1em;
 padding:7.94427px 15.8885px 14.2997px 38.9269px;
 `
 
