@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Search from './components/Search';
 import HowItWorks from './components/HowItWorks';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <Search/>
       <HowItWorks/>
+      <AboutUs/>
     </>
   );
 }

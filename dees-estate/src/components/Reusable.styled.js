@@ -5,7 +5,7 @@ export const Section = styled.section`
   position: relative;
   width:100%;
   margin:0;
-  padding:${({padding})=>padding ? padding: '1em 3em'};
+  padding:${({padding})=>padding ? padding : '5em'};
   order:${({order})=>order};
   display:${({grid, flex})=> grid ? 'grid' : flex ? 'flex' : 'block'};
     
@@ -52,6 +52,13 @@ export const Container = styled.div`
 
 `
 
+export const TextWrapper = styled(Container)`
+padding:0;
+justify-content:space-evenly;
+align-items:flex-start;
+max-width:640px;
+`
+
 //Button
 export const Button = styled.button`
 display: flex;
@@ -69,4 +76,7 @@ color:white;
 &:hover{
   cursor:pointer;
 }
+`
+
+export const Image = styled.img`
 `

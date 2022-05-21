@@ -19,7 +19,7 @@ line-height: 31px;
 color:${({primary})=> primary ? '#0F298B' : 'inherit'};
 `
 export const Text = styled.p`
-font-weight: 400;
+font-weight:${({em})=> em ? '500':'400'};
 font-size: ${({large})=> large ? '32px' : '24px'};
 line-height: ${({large})=> large ? '41px' : '31px'};
 color:${({primary})=> primary ? '#0F298B' : 'inherit'};

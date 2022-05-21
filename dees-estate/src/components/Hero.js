@@ -7,7 +7,6 @@ export default function Hero() {
   return (
     <Section
       flex
-      padding="3em"
       Justify="space-between"
     >
       <TextWrapper flex column>

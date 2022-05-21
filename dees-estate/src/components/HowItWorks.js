@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 import { Section, Container } from './Reusable.styled'
-import {SubHeading , Title, Text} from './Text.styled'
-import {Location, House, Lock} from '../assets/index'
+import {SubHeading , Text} from './Text.styled'
+import {Location, Lock, House} from '../assets/'
 
 export default function HowItWorks() {
   return (
     <Section
       flex
       column
-      padding="3em"
     >
       <TextWrapper flex column>
         <SubHeading primary>
@@ -19,7 +18,7 @@ export default function HowItWorks() {
         </Text>
       </TextWrapper>
 
-      <Container flex Justify="Space-between">
+      <Container flex Justify="Space-between" padding="2em 0">
           <Card flex column>
             <Image src={Location} alt='Find Home'></Image>
             <SubHeading>Find Home</SubHeading>
