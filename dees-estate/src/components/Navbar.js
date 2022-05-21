@@ -42,7 +42,7 @@ text-align:center;
     }
 `
 const Logo = styled.div`
-background:url(${logo}) no-repeat white;
+background:url(${logo}) no-repeat #E5E5E5;
 background-size:contain;
 background-position:center;
 width: 165px;

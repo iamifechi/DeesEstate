@@ -1,36 +1,32 @@
 import heroImage from '../assets/heroImage.png'
 import styled from 'styled-components'
-import { Container, Button } from './Reusable.styled'
+import { Section, Container, Button } from './Reusable.styled'
 import {Heading , Text} from './Text.styled'
-function Hero() {
+
+export default function Hero() {
   return (
-    <Container
+    <Section
       flex
       padding="3em"
       Justify="space-between"
     >
-      <TextWrapper>
-        <Heading>
+      <TextWrapper flex column>
+        <Heading primary>
           Helping you find the property of your dreams.
         </Heading>
-        <Text>
+        <Text large>
           Creating quality urban lifestyles,building stronger communities
         </Text>
         <Button>Learn More</Button>
 
       </TextWrapper>
       <ImageWrapper/>
-    </Container>
+    </Section>
   )
 }
 
-export default Hero
-
-const TextWrapper = styled.div`
-display: grid;
-flex-direction:column;
-grid-template-rows:1fr 1fr 1fr;
-gap:1em;
+const TextWrapper = styled(Container)`
+padding:0;
 justify-content:space-evenly;
 align-items:flex-start;
 max-width:640px;
