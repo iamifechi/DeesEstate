@@ -29,7 +29,7 @@ export const Section = styled.section`
 export const Container = styled.div`
   position: relative;
   width:100%;
-  margin:0;
+  margin:${({margin})=>margin ? margin: '0'};
   padding:${({padding})=>padding ? padding: '1em 3em'};
   order:${({order})=>order};
   display:${({grid, flex})=> grid ? 'grid' : flex ? 'flex' : 'block'};
