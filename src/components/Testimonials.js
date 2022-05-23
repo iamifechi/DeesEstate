@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Section, Container, Card as CardContainer ,Button as BTN } from './Reusable.styled'
-import {SubHeading , Title, Text, SmallText} from './Text.styled'
+import {SubHeading , Text, SmallText} from './Text.styled'
 
 export default function Testimonials() {
   return (
