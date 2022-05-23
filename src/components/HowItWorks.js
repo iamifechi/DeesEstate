@@ -10,7 +10,7 @@ export default function HowItWorks() {
       column
     >
       <TextWrapper flex column>
-        <SubHeading primary>
+        <SubHeading bold size="48px" margin="5px auto" primary>
           How it works.
         </SubHeading>
         <Text large>
@@ -18,28 +18,34 @@ export default function HowItWorks() {
         </Text>
       </TextWrapper>
 
-      <Container flex Justify="Space-between" padding="2em 0">
+      <Container flex Justify="Space-between" padding="3em 0">
           <Card flex column>
             <Image src={Location} alt='Find Home'></Image>
+            <Container padding="0" grid gap="9px">
             <SubHeading>Find Home</SubHeading>
             <Text>Our properties are located 
                 at prime areas where by there 
                 won’t be problem with transportation
             </Text>
+            </Container>
           </Card>
           <Card flex column>
             <Image src={House} alt='Find Home'></Image>
+            <Container padding="0" grid gap="9px">
             <SubHeading>Make Payments</SubHeading>
-            <Text>Our estates comes with good network,portable water , 
-                24hrs light and round the clock security.
+            <Text>Our estates comes with good network,portable water,
+              24hrs light and round the clock security.
             </Text>
+            </Container>
           </Card>
           <Card flex column>
             <Image src={Lock} alt='Keys'></Image>
+            <Container padding="0" grid gap="9px">
             <SubHeading>Make it Official</SubHeading>
             <Text>We have been in business for over 32 years,for client 
                 outside the country you can trust us to deliver well.
             </Text>
+            </Container>
           </Card>
 
       </Container>
@@ -59,7 +65,7 @@ margin:1em auto;
 const Card = styled(CardContainer)`
 justify-content: space-evenly;
 align-items: center;
-padding: 3em;
+padding: 3em 2em;
 width: 438px;
 height: 539px;
 text-align:center;

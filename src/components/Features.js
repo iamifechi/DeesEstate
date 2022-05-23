@@ -30,7 +30,7 @@ export default function Features() {
                 <SmallText>Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
+                <SmallText>Lekki,Phase 2</SmallText>
                 <SmallText primary>$2,000</SmallText>
             </Container>
           </Card>
@@ -41,7 +41,7 @@ export default function Features() {
                 <SmallText>Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
+                <SmallText>Lekki,Phase 2</SmallText>
                 <SmallText primary>$2,000</SmallText>
             </Container>      
           </Card>
@@ -52,7 +52,7 @@ export default function Features() {
                 <SmallText >Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SmallText>Lekki, Phase 2</SmallText>
+                <SmallText>Lekki,Phase 2</SmallText>
                 <SmallText primary>$2,000</SmallText>
             </Container>
           </Card>
@@ -78,6 +78,10 @@ max-width: 415.49px;
 height: 330.48px;
 border-radius: 0px 39.7214px;
 padding:7.94427px 15.8885px 14.2997px 38.9269px;
+
+&:hover{
+  transform:scale(1.02);
+}
 `
 
 const Image = styled.img`

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { Container,} from './Reusable.styled'
-import {SubHeading , Text, SmallText} from './Text.styled'
-import logo from '../assets/logo.png'
-import {Logo} from './Navbar'
+import { Container, Logo} from './Reusable.styled'
+import {SubHeading , Text} from './Text.styled'
+// import logo from '../assets/logo.png'
+// import {Logo} from './Navbar'
 
 const footer_links = [
     {
@@ -22,8 +22,8 @@ const footer_links = [
 export default function Footer() {
   return (
     <FooterContainer>
-        <Wrapper>
-            <FooterLogo>Dee's Estate</FooterLogo>
+        <Wrapper grid gap="5px">
+            <Link> <Logo white/> </Link>
             <Text FTN2 height="33px">
                 Solution for easy and flexible house hunting.
                 You can trust us anywhere through this platform 
@@ -37,7 +37,7 @@ export default function Footer() {
                         <Container grid gap="19px" padding="0">
                             {section.links.map((link,link_index)=>{
                                 return(
-                                    <Link FTN2>{link}</Link>
+                                    <Link FTN2 key={`${index}${link_index}`}>{link}</Link>
                                 )
                             })}
                             
@@ -64,11 +64,6 @@ height:400px;
 min-height: 607px;
 `
 
-const FooterLogo = styled(Logo)`
-filter:invert(1);
-margin-bottom:5px;
-`
-
 const Wrapper = styled(Container)`
 width: 331px;
 padding:0;
@@ -88,4 +83,8 @@ color:#FFFFFF;
 font-size:24px; */
 opacity:0.8;
 line-height: 33px;
+&:hover{
+    text-decoration:underline;
+    transform:scale(1.02);
+}
 `

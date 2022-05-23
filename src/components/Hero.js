@@ -1,13 +1,14 @@
-import heroImage from '../assets/heroImage.png'
 import styled from 'styled-components'
-import { Section, Container, Button } from './Reusable.styled'
+import { Section, Container, Button} from './Reusable.styled'
 import {Heading , Text} from './Text.styled'
+import {Hero as heroImage} from '../assets/index'
+import {Play} from '../assets/index'
 
 export default function Hero() {
   return (
     <Section
       flex
-      padding="3em"
+      padding="5em 3em"
       Justify="space-evenly"
     >
       <TextWrapper flex column>
@@ -17,7 +18,12 @@ export default function Hero() {
         <Text large>
           Creating quality urban lifestyles,building stronger communities
         </Text>
-        <Button>Learn More</Button>
+
+        <Container flex padding="0" Align="center"> 
+          <Button shadow>Learn More</Button>
+          <PlayButton/>
+        </Container>
+        
 
       </TextWrapper>
       <ImageWrapper/>
@@ -31,9 +37,33 @@ justify-content:space-evenly;
 align-items:flex-start;
 max-width:640px;
 `
+
+const PlayButton = styled.div`
+background:url(${Play}) no-repeat #0F298B;
+background-position:center;
+width: 50px;
+height: 50px;
+border-radius:50%;
+margin:0 50px;
+`
+
 const ImageWrapper = styled.div`
 background:url(${heroImage}) no-repeat;
 width:100%;
 max-width:736px;
 height:511px;
+position:relative;
+
+  &::before{
+  content:"";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  bottom: 0;
+  background: #2549D3;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.25);
+  z-index:5;
+  border-radius:50%;
+  }
 `

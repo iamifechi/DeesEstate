@@ -12,7 +12,6 @@ margin:${({margin})=>margin ? margin: '0'};
 text-transform:${({uppercase})=>uppercase ? 'uppercase': null};
 color:${({primary})=> primary ? '#0F298B' : 'inherit'};
 opacity:${({blur})=> blur ? '0.7' : null};
-
 `
 
 export const SubHeading = styled(Paragraph)`
@@ -26,7 +25,7 @@ font-size: 24px;
 line-height: 31px;
 `
 export const Text = styled(Paragraph)`
-font-weight: 400;
+font-weight:${({bold})=> bold ? '500' : '400'};
 font-style: normal;
 font-size: ${({large})=> large ? '32px' : '24px'};
 line-height: ${({large,height})=> large ? '41px' : height ? height : '31px'};
