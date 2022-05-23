@@ -3,7 +3,7 @@ Simple Create-React-App implementation of "Dees's Estate" design by [Adeola Adek
 # View Demo (Netlify) 
 - https://dees-estate.netlify.app
 
-![This is an image](https://github.com/iamifechi/src/assets/images/dees-estate-live.png)
+![This is an image](https://github.com/iamifechi/DeesEstate/src/assets/images/dees-estate-live.png)
 
 # Behance - Adeola Adekoya Behance 
 - https://www.behance.net/gallery/143977345/A-real-Estate-landing-page
