@@ -1,5 +1,5 @@
 import styled from "styled-components";
-//import {White, Black} from '../assets/index'
+import {White, Black} from '../assets/index'
 
 //Container
 export const Section = styled.section`
@@ -105,17 +105,15 @@ export const Logo = styled.header`
 width: 165px;
 height: 50px;
 position:relative;
-
-&::after{
-content:"Dee's Estate";
-position:absolute;
-top:0;
-left:0;
+background: ${({white})=> white ? `url(${White}) no-repeat` : `url(${Black}) no-repeat`};
+background-size: contain;
+background-position: center;
 font-family: 'Oleo Script';
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
 line-height: 50px;
-color: ${({white})=> white ? '#FFFFF' : '#000000'};
-}
+color: ${({white})=> white ? '#FFFFFF' : '#000000'};
+text-indent:-9999px;
+
 `

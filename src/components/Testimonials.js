@@ -60,7 +60,7 @@ const TextWrapper = styled(Container)`
 padding:1em;
 justify-content:space-space-between;
 align-items:center;
-margin:1em auto;
+margin:0 auto;
 max-width:954px;
 text-align:center;
 `

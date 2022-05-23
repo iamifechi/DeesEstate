@@ -12,12 +12,14 @@ export default function Hero() {
       Justify="space-evenly"
     >
       <TextWrapper flex column>
-        <Heading primary>
-          Helping you find the property of your dreams.
-        </Heading>
-        <Text large>
-          Creating quality urban lifestyles,building stronger communities
-        </Text>
+        <Container grid gap="1em" padding="0">
+          <Heading primary>
+            Helping you find the property of your dreams.
+          </Heading>
+          <Text large>
+            Creating quality urban lifestyles,building stronger communities
+          </Text>
+        </Container>
 
         <Container flex padding="0" Align="center"> 
           <Button shadow>Learn More</Button>
@@ -33,14 +35,14 @@ export default function Hero() {
 
 const TextWrapper = styled(Container)`
 padding:0;
-justify-content:space-evenly;
+justify-content:space-between;
 align-items:flex-start;
 max-width:640px;
 `
 
 const PlayButton = styled.div`
 background:url(${Play}) no-repeat #0F298B;
-background-position:center;
+background-position:15px center;
 width: 50px;
 height: 50px;
 border-radius:50%;

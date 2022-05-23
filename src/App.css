@@ -4,12 +4,16 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
     font-size:24px;
-    width:100%;
+    /*width:100%;*/
     min-width:1728px;
-    background:#E5E5E5;
+    background:#fafafa;
 }
 
-
+@media screen and (max-width:762px){
+    body {
+        font-size:16px;
+    }
+}
 
 * {
     box-sizing: border-box;

@@ -53,7 +53,7 @@ max-width:736px;
 height:511px;
 `
 const ContentWrapper = styled(TextWrapper)`
-align-content: start;
+align-content: center;
 `
 
 const Title = styled(Heading)`

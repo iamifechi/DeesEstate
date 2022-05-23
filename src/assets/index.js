@@ -1,5 +1,5 @@
-import black from './logo_black.png'
-import white from './logo_white.png'
+import black from './logo_black.svg'
+import white from './logo_white.svg'
 import house_illustration from './illustrations/house.png'
 import location from './illustrations/location.png'
 import lock from './illustrations/lock.png'

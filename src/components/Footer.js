@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <FooterContainer>
         <Wrapper grid gap="5px">
-            <Link> <Logo white/> </Link>
+            <Link> <Logo white>Dee's Estate</Logo> </Link>
             <Text FTN2 height="33px">
                 Solution for easy and flexible house hunting.
                 You can trust us anywhere through this platform 
@@ -32,7 +32,7 @@ export default function Footer() {
         <LinkWrapper flex >
             {footer_links.map((section,index)=>{
                 return(
-                    <Container grid gap="38px" padding="0" key={`${section.heading}-${index}`}>
+                    <Container grid gap="38px" width="0" padding="0" key={`${section.heading}-${index}`}>
                         <SubHeading bold>{section.heading}</SubHeading>
                         <Container grid gap="19px" padding="0">
                             {section.links.map((link,link_index)=>{
