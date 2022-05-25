@@ -10,6 +10,8 @@ export default function Hero() {
       flex
       padding="5em 3em"
       Justify="space-evenly"
+
+      className="hero"
     >
       <TextWrapper flex column>
         <Container grid gap="1em" padding="0">
@@ -28,7 +30,7 @@ export default function Hero() {
         
 
       </TextWrapper>
-      <ImageWrapper/>
+      <ImageWrapper className="hero_image"/>
     </Section>
   )
 }
@@ -51,6 +53,8 @@ margin:0 50px;
 
 const ImageWrapper = styled.div`
 background:url(${heroImage}) no-repeat;
+background-size:contain;
+background-position:center;
 width:100%;
 max-width:736px;
 height:511px;

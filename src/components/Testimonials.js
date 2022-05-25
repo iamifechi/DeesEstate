@@ -10,7 +10,7 @@ export default function Testimonials() {
       padding="3em"
     >
       <TextWrapper flex column>
-        <SubHeading bold size='48px' margin="7px auto" primary>
+        <SubHeading bold size={48} margin="7px auto" primary>
         Testimonials
         </SubHeading>
         <Text large>
@@ -21,29 +21,29 @@ export default function Testimonials() {
 
       <Button>View More</Button>
 
-      <Container flex Justify="Space-between">
+      <Container className="card_container" flex Justify="Space-between">
         <Card flex column>
-            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SubHeading size ={30} bold>Alex Godwin</SubHeading>
             <SmallText bold FTN2>South Africa</SmallText>
-            <SmallText size ='22.24242px' blur>
+            <SmallText size ={22.24242} blur>
                 Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. Fames ut dictumst urna, 
                 lorem nibh. Pretium leo hendrerit interdum netus
             </SmallText>
         </Card>
         <Card flex column>
-            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SubHeading size ={30} bold>Alex Godwin</SubHeading>
             <SmallText bold FTN2>South Africa</SmallText>
-            <SmallText size ='22.24242px' blur>
+            <SmallText size ={22.24242} blur>
                 Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. Fames ut dictumst urna, 
                 lorem nibh. Pretium leo hendrerit interdum netus
             </SmallText>
         </Card>
         <Card flex column>
-            <SubHeading size ='30px' bold>Alex Godwin</SubHeading>
+            <SubHeading size = {30} bold>Alex Godwin</SubHeading>
             <SmallText bold FTN2>South Africa</SmallText>
-            <SmallText size ='22.24242px' blur>
+            <SmallText size = {22.24242} blur>
                 Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. Fames ut dictumst urna, 
                 lorem nibh. Pretium leo hendrerit interdum netus

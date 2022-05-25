@@ -4,14 +4,16 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
     font-size:24px;
-    /*width:100%;*/
-    min-width:1728px;
+    line-height:150%;
+    width:100%;
+    max-width:1728px;
     background:#fafafa;
 }
 
-@media screen and (max-width:762px){
+@media screen and (max-width:1727px){
     body {
         font-size:16px;
+        /* min-width: 100%; */
     }
 }
 
@@ -29,4 +31,5 @@ a:hover{
 
 h1,h2,h3,p{
     margin:0;
+    line-height:1.5;
 }

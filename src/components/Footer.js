@@ -62,6 +62,16 @@ background:#0F298B;
 color:#FFFFFF;
 height:400px;
 min-height: 607px;
+
+/* @media (max-width:720px){
+    flex-direction:column;
+    grid-template-columns:1fr;
+    padding:6em 2em;
+    height:100%;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(1fr, 200px))
+   } */
 `
 
 const Wrapper = styled(Container)`

@@ -11,7 +11,7 @@ export default function Features() {
       padding="3em"
     >
       <TextWrapper flex column>
-        <SubHeading bold size='48px' margin="7px auto" primary>
+        <SubHeading bold size={48} margin="7px auto" primary>
         Our Featured Properties.
         </SubHeading>
         <Text large>
@@ -22,11 +22,11 @@ export default function Features() {
 
       <Button>View More</Button>
 
-      <Container flex Justify="Space-between">
+      <Container className="card_container" flex Justify="Space-between">
           <Card flex column>
             <Image src={Palace} alt='The Palace'/>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>The Palace</SubHeading>
+                <SubHeading size ={31} uppercase>The Palace</SubHeading>
                 <SmallText>Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
@@ -37,7 +37,7 @@ export default function Features() {
           <Card flex column>
             <Image src={Ivy} alt='Ivy Rory'/>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>Ivy Rory</SubHeading>
+                <SubHeading size ={31} uppercase>Ivy Rory</SubHeading>
                 <SmallText>Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
@@ -48,7 +48,7 @@ export default function Features() {
           <Card flex column>
             <Image src={Rexona} alt='Rexona'/>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
-                <SubHeading size ='31px' uppercase>Rexona</SubHeading>
+                <SubHeading size ={31} uppercase>Rexona</SubHeading>
                 <SmallText >Duplex</SmallText>
             </Container>
             <Container flex padding="0" Justify='space-between' Align='baseline'>
