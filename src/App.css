@@ -5,8 +5,10 @@ body {
     font-style: normal;
     font-size:24px;
     /*width:100%;*/
-    min-width:1728px;
+    /* min-width:1728px; */
     background:#fafafa;
+    padding:0;
+    margin:0;
 }
 
 @media screen and (max-width:762px){
@@ -17,6 +19,8 @@ body {
 
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 a{

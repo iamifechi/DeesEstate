@@ -1,0 +1,187 @@
+nav#topnav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:96%;
+    height:10vh;
+    padding:1% 2%;
+    z-index:1;
+    @include flex(row,space-between,center);
+   
+
+    #brand-logo{
+        position:relative;
+        width:82px;
+        padding:10px;
+        margin-left:5%;
+        img{
+            width:100%;
+            filter:saturate(0) brightness(1.5);
+        }
+    }
+
+    #nav{
+        list-style: none;
+        @include flex(row,flex-end,center);
+        position:absolute;
+        top:-16px;
+        right:0%;
+        width:60%;
+        height:5em;
+
+        li{
+            display:none;
+        }
+
+        a{
+            color:white;
+            padding:10px 15px;
+            width:fit-content;
+            text-decoration:none;
+            font:inherit;
+            font-size:14px;
+        }
+        a:hover{
+            font-weight:500;
+            color:black;
+            transform:scale(1.02);
+        }
+    }
+
+    #toggle-btn{
+        position:absolute;
+        display:block;
+        top:2vh;
+        //right:5%;
+        left:75%;
+        width:40px;
+        height:fit-content;
+        padding:10px;
+        z-index:99;
+       
+
+        .bars{
+            position:relative;
+            height:3px;
+            width:30px;
+            background:white;
+            margin:4px auto;
+            display:block;
+            transition:background 0.1s ease, visibility 0.1s ease, transform 0.5s ease-in-out;
+        }
+
+        .bars:nth-child(2)::after{
+            content:"Menu";
+            font-size:12px;
+            position:absolute;
+            top:4vh;
+            left:0vw;
+            color:white;
+            height:20px;
+            width:50px;
+            display:none;
+        }
+        
+
+    }
+    #toggle-btn:hover{
+        cursor:pointer;
+
+        .bars:nth-child(2)::after{
+            display:flex;
+        }
+    }
+    #toggle-btn.open{
+        .bars:first-child{
+            transform:translateY(0px) rotate(0deg);
+            }
+        .bars:last-child{
+            transform:translateY(0px) rotate(0deg);
+        } 
+        .bars:nth-child(2){
+            visibility:visible;
+        }
+    
+    }
+    #toggle-btn.close{
+        .bars:first-child{
+            transform:translateY(9px) rotate(45deg);
+            }
+        .bars:last-child{
+            transform:translateY(-6px) rotate(-45deg);
+        } 
+        
+        .bars:nth-child(2){
+            visibility:hidden;
+        }
+         .bars:nth-child(2)::after{
+            color:black;
+            content:"close";
+            visibility:visible;
+        }
+    }
+
+    
+   #nav.toggle{
+        position:absolute;
+        top:0;
+        left:0;
+        margin-top:90vh;
+        margin-left:0;
+        height:100vh;
+        width:100vw;
+        background:white;
+        padding:0px;
+        margin:0px;
+        @include flex(column,flex-start,center);
+
+        
+        li{
+            display:block;
+            text-align:center;
+            margin:20px auto;
+
+            a{
+                color:black;
+            }
+            a:hover{
+                color:$green;
+            }
+        }
+        li:first-child{
+            margin-top:5em;
+        }
+
+        #toggle-btn{
+            left:80%;
+        }
+        #toggle-btn .bars{
+            background:black;
+        }
+    }
+    
+   
+
+}
+
+@media screen and (min-width:762px){
+    nav#topnav{
+        width:96%;
+        height:10vh;
+        padding:1% 2%;
+        background:transparent;
+        @include flex(row,space-between,center);
+       
+        #nav{
+            right:5%;
+        }
+        #nav li{
+            @include flex(row,center,center);
+        }
+             
+        #toggle-btn{
+            display:none;
+        }
+    } 
+    
+}
