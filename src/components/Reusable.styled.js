@@ -58,7 +58,7 @@ export const Section = styled.section`
 `
 export const Container = styled.div`
   position: relative;
-  width:${({fit,width})=> fit || width || '100%'};;
+  width:${({fit,width})=> fit ? 'fit-content' : "" || width || '100%'};;
   margin:${({margin})=>margin ? margin: '0'};
   padding:${({padding})=>padding ? padding: '1em 3em'};
   order:${({order})=>order};
