@@ -31,6 +31,7 @@ background: #FFFFFF;
 box-shadow: 24px 24px 48px rgba(37, 73, 211, 0.05);
 border-radius: 28px;
 flex-direction:column;
+flex-wrap:wrap;
 width:80%;
 justify-content:flex-start;
 align-items:flex-start;
@@ -41,11 +42,14 @@ margin:1em;
 }
 & ${Container}{
     width:100%;
-
     p{
         display:flex;
         align-items:center;
         justify-content:space-between;
+    }   
+
+    @media screen and (min-width:768px){
+        max-width:250px;
     }
 
 }
@@ -66,6 +70,7 @@ margin:1em;
     & ${Container}{
         padding:1em 0;
         width:fit-content;
+        max-width:250px !important;
         p{
             display:block
         }

@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Hero from './components/Hero2'
 import Search from './components/Search';
-//import HowItWorks from './components/HowItWorks';
 import HowItWorks from './components/HowItWork';
 import AboutUs from './components/AboutUs';
 import Features from './components/Features';

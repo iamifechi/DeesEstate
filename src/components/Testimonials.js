@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Section, Container, Card as CardContainer ,Button as BTN } from './Reusable.styled'
+import { Section, TextWrapper as Wrapper, Container, Card as Cards ,Button as BTN } from './Reusable.styled'
 import {SubHeading , Text, SmallText} from './Text.styled'
 
 export default function Testimonials() {
@@ -56,19 +56,21 @@ export default function Testimonials() {
   )
 }
 
-const TextWrapper = styled(Container)`
-padding:1em;
-justify-content:space-space-between;
+const TextWrapper = styled(Wrapper)`
+justify-content:space-between;
 align-items:center;
 margin:0 auto;
+width:100%;
 max-width:954px;
 text-align:center;
 `
 
-const Card = styled(CardContainer)`
+const Card = styled(Cards)`
 justify-content: space-between;
+min-width:250px;
 max-width: 453.15px;
 height: 238.09px;
+height:fit-content;
 `
 
 const Button = styled(BTN)`
@@ -78,4 +80,9 @@ margin:1em 4em;
 font-weight: 600;
 font-size: 18.6868px;
 border-radius: 18.6868px;
+
+@media screen and (max-width:768px){
+  order:3;
+  margin:0;
+}
 `

@@ -43,19 +43,21 @@ export const Section = styled.section`
 
 
   @media screen and (max-width:768px){
-    gap: 3em;
+    gap: 2em;
   }
   @media screen and (min-width:768px){
     gap: ${({gap})=> gap ? gap :null};
   }
    
    @media (max-width:999px){
-     &.hero{
-      padding:5em 2em;
+     &.hero, &.about{
+      padding:3em 2em;
+      flex-direction:column-reverse;
+     }
 
-      .hero_image{
-        display:none;
-      }
+     &.about{
+       align-items:center;
+       text-align:center;
      }
    
    }
@@ -83,39 +85,52 @@ export const Container = styled.div`
       justify-items:center;
     }
 
- 
-
-   //for cards
-   @media screen and (max-width:1727px){
+    //for cards wrapper/container
     &.card_container{
       flex: 1 1 438px;
       flex-wrap: wrap;
-      gap: 5em;
+      gap: 2em;
       justify-content:center;
       justify-items:${({center})=> center ? 'center' : null};
+      padding:1em 0;
+      align-items:center;
+
+      @media screen and (min-width:768px){
+        padding:1em;
+        gap:5em;
+        justify-content:center;
+
+      }
     }
-  }
+
+   
 `
 export const Card = styled(Container)`
 background: #FFFFFF;
 border-radius: 18.6868px;
 padding:18.6868px ;
 align-items: flex-start;
+height:fit-content;
+margin:0;
 
 &:hover{
     box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
 }
-@media (max-width:1727px){
+/* @media (max-width:1727px){
     flex-direction:column;
     grid-template-columns:1fr;
     
-   }
+   } */
 `
 export const TextWrapper = styled(Container)`
 padding:0;
 justify-content:space-evenly;
 align-items:flex-start;
 max-width:640px;
+
+@media screen and (min-width:768px){
+padding:1em;
+}
 `
 //Button
 export const Button = styled.button`
@@ -126,7 +141,7 @@ padding: 0.8em 1.2em;
 background: #2549D3;
 border: none;
 border-radius: 10px;
-font-size: 24px;
+font-size: 100%;
 font-size: ${clamp(24)};
 font-weight:700;
 color:white;

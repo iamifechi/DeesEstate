@@ -29,12 +29,12 @@ export default function Footer() {
                 You can trust us anywhere through this platform 
             </Text>
         </Wrapper>
-        <LinkWrapper flex >
+        <LinkWrapper flex>
             {footer_links.map((section,index)=>{
                 return(
-                    <Container grid gap="38px" width="0" padding="0" key={`${section.heading}-${index}`}>
+                    <Container grid gap="1em" width="fit-content" padding="0" key={`${section.heading}-${index}`}>
                         <SubHeading bold>{section.heading}</SubHeading>
-                        <Container grid gap="19px" padding="0">
+                        <Container grid gap="0.5em" padding="0">
                             {section.links.map((link,link_index)=>{
                                 return(
                                     <Link FTN2 key={`${index}${link_index}`}>{link}</Link>
@@ -54,14 +54,16 @@ const FooterContainer = styled.footer`
 position: relative;
 width:100%;
 margin:0;
-padding:6em;
+padding:6em 2em;
 display:flex;
 align-items:flex-start;
 justify-content:space-between;
 background:#0F298B;
 color:#FFFFFF;
-height:400px;
+height:100%;
 min-height: 607px;
+flex-wrap:wrap;
+gap:4em;
 
 /* @media (max-width:720px){
     flex-direction:column;
@@ -82,15 +84,16 @@ const LinkWrapper = styled(Container)`
 padding:0;
 align-items:flex-start;
 justify-content:space-between;
+flex-wrap:wrap;
 max-width:912px;
+gap:4em;
 `
 
 const Link = styled.a`
 font-family: ${({FTN2})=> FTN2 ? `'Nunito',sans-serif`: `'Space Grotesk', sans-serif`};
+//font-size:24px;
 margin:0;
 color:#FFFFFF;
-/* font-weight: 400;
-font-size:24px; */
 opacity:0.8;
 line-height: 33px;
 &:hover{

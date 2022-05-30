@@ -8,6 +8,7 @@ export default function HowItWorks() {
     <Section
       flex
       column
+      padding="5em 2em"
     >
       <TextWrapper flex column>
         <SubHeading bold size={48} margin="5px auto" primary>
@@ -65,6 +66,7 @@ padding:0;
 justify-content:space-evenly;
 align-items:center;
 margin:1em auto;
+text-align:center;
 `
 const CardContainer = styled(Container)`
 width:100%;
