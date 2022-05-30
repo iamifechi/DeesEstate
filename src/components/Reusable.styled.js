@@ -33,17 +33,22 @@ export const Section = styled.section`
   display:${({grid, flex})=> grid ? 'grid' : flex ? 'flex' : 'block'};
     
   //for grid
-  gap: ${({gap})=> gap ? gap :''};
-  gap: 3em;
-  grid-template-columns: ${({GTC})=>GTC ? GTC : '' };
+  grid-template-columns: ${({GTC})=>GTC ? GTC : null };
 
   //for flex
-  flex-direction:${({column})=> column ? 'column' : ''};
+  flex-direction:${({column})=> column ? 'column' : null};
 
-  align-items:${({Align})=> Align ? Align : ''};
-  justify-content:${({Justify})=> Justify ? Justify : ''};
+  align-items:${({Align})=> Align ? Align : null};
+  justify-content:${({Justify})=> Justify ? Justify : null};
 
 
+  @media screen and (max-width:768px){
+    gap: 3em;
+  }
+  @media screen and (min-width:768px){
+    gap: ${({gap})=> gap ? gap :null};
+  }
+   
    @media (max-width:999px){
      &.hero{
       padding:5em 2em;
@@ -65,14 +70,14 @@ export const Container = styled.div`
   display:${({grid, flex})=> grid ? 'grid' : flex ? 'flex' : 'block'};
     
   //for grid
-  gap: ${({gap})=> gap ? gap :''};
-  grid-template-columns: ${({GTC})=>GTC ? GTC : '' };
+  gap: ${({gap})=> gap ? gap :null};
+  grid-template-columns: ${({GTC})=>GTC ? GTC : null };
 
   //for flex
-  flex-direction:${({column})=> column ? 'column' : ''};
+  flex-direction:${({column})=> column ? 'column' : null};
 
-  align-items:${({Align})=> Align ? Align : ''};
-  justify-content:${({Justify})=> Justify ? Justify : ''};
+  align-items:${({Align})=> Align ? Align : null};
+  justify-content:${({Justify})=> Justify ? Justify : null};
 
   &.card_text{
       justify-items:center;
@@ -87,7 +92,7 @@ export const Container = styled.div`
       flex-wrap: wrap;
       gap: 5em;
       justify-content:center;
-      justify-items:${({center})=> center ? 'center' : ''};
+      justify-items:${({center})=> center ? 'center' : null};
     }
   }
 `
