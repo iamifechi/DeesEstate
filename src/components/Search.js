@@ -37,7 +37,7 @@ justify-content:flex-start;
 align-items:flex-start;
 gap:.4vmax;
 
-&${Button}{
+& ${Button}{
 margin:1em;
 }
 
@@ -51,15 +51,7 @@ margin:1em;
         justify-content:space-between;
     }   
 
-    @media screen and (min-width:768px){
-        width:fit-content;
-        max-width:250px;
-
-        
-        ${Title}{
-            display:block;
-        }   
-    }
+   
 
 }
 
@@ -75,16 +67,14 @@ margin:1em;
     & ${Button}{
         margin:0;
     }
-
-    /* & ${Container}{
-        padding:1em 0;
+    & ${Container}{
         width:fit-content;
-        max-width:250px !important;
-
-        ${Title}{
-            display:block
-        }
-    } */
+        max-width:260px;
     
+        ${Title}{
+            display:block;
+        }   
+    }
+   
 }
 `

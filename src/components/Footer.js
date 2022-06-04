@@ -63,7 +63,7 @@ color:#FFFFFF;
 height:100%;
 min-height: 607px;
 flex-wrap:wrap;
-gap:4em 10em;
+gap:4em 8em;
 
 @media (min-width:720px){
     padding:6em 4em;
@@ -80,12 +80,12 @@ align-items:flex-start;
 justify-content:flex-start;
 flex-wrap:wrap;
 max-width:912px;
-gap:4em 5em;
+width:fit-content;
+gap:4em;
 `
 
 const Link = styled.a`
 font-family: ${({FTN2})=> FTN2 ? `'Nunito',sans-serif`: `'Space Grotesk', sans-serif`};
-//font-size:24px;
 margin:0;
 color:#FFFFFF;
 opacity:0.8;

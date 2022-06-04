@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <Section
       flex
-      padding="3em"
+      padding="4em 3em"
       Justify="space-evenly"
       className="hero"
       gap="2em"

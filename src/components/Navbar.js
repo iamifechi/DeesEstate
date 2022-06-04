@@ -64,7 +64,7 @@ export default function Navbar() {
 const Nav = styled.nav`
 text-align:center;
 border-bottom: 1px solid #C4C4C4;
-padding:1em 8%;
+padding:1em 3em;
 position: relative;
 width:100%;
 margin:0;
@@ -78,7 +78,7 @@ justify-content:space-between;
         text-decoration:underline;
     }
     @media screen and (min-width:768px){
-        padding:1em 7%;
+        padding:1em 3em;
 
         & ${Button}{
             justify-self:flex-end;

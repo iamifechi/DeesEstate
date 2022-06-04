@@ -98,11 +98,7 @@ margin:0;
 &:hover{
     box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
 }
-/* @media (max-width:1727px){
-    flex-direction:column;
-    grid-template-columns:1fr;
-    
-   } */
+
 `
 export const TextWrapper = styled(Container)`
 padding:0;
