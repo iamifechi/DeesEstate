@@ -8,7 +8,7 @@ export default function HowItWorks() {
     <Section
       flex
       column
-      padding="5em 2em"
+      padding="5em 2em 2em"
     >
       <TextWrapper flex column>
         <SubHeading bold size={48} margin="5px auto" primary>
@@ -86,14 +86,23 @@ const Card = styled(Cards)`
 justify-content: center;
 align-items: center;
 padding: 4em 2em;
+width:32vw;
 max-width: 438px;
 min-width: 360px;
-height:539px;
+min-width: 300px;
 text-align:center;
 border-radius:0;
 gap:1em;
 position:relative;
-flex:1 1 438px;
+//min-width: 351px;
+height: 40vh;
+min-height:329px;
+max-height: 539px;
+flex: 1 1 380px;
+
+@media screen and (min-width:768px){
+  min-height:524px;
+}
 `
 
 const Image = styled.img`

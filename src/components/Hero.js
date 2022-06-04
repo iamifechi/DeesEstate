@@ -8,18 +8,18 @@ export default function Hero() {
   return (
     <Section
       flex
-      padding="5em 3em"
+      padding="3em"
       Justify="space-evenly"
-
       className="hero"
+      gap="2em"
     >
       <TextWrapper flex column>
-        <Container grid gap="1em" padding="0">
+        <Container grid className='text-content' gap="1em" padding="0">
           <Heading primary>
             Helping you find the property of your dreams.
           </Heading>
           <Text large>
-            Creating quality urban lifestyles,building stronger communities
+            Creating quality urban lifestyles, building stronger communities
           </Text>
         </Container>
 
@@ -30,7 +30,7 @@ export default function Hero() {
         
 
       </TextWrapper>
-      <ImageWrapper className="hero_image"/>
+      <ImageWrapper/>
     </Section>
   )
 }
@@ -40,6 +40,24 @@ padding:0;
 justify-content:space-between;
 align-items:flex-start;
 max-width:640px;
+gap:2em;
+  /* h1{
+      font-size:48px;
+    } */
+
+@media screen and (min-width:768px){
+    gap:1em;
+    padding:0;
+
+    & ${Container}.text-content{
+        gap:1em;
+        /* h1{
+          font-size:64px;
+        } */
+      }
+}
+
+
 `
 
 const PlayButton = styled.div`
@@ -57,8 +75,14 @@ background-size:contain;
 background-position:center;
 width:100%;
 max-width:736px;
-height:511px;
+height:32vmax;
+min-height:235px;
+max-height:511px;
 position:relative;
+
+@media screen and(min-width:999px){
+  height:511px;
+}
 
   &::before{
   content:"";

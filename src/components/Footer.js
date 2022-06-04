@@ -54,26 +54,20 @@ const FooterContainer = styled.footer`
 position: relative;
 width:100%;
 margin:0;
-padding:6em 2em;
+padding:5em 2em;
 display:flex;
 align-items:flex-start;
-justify-content:space-between;
+justify-content:flex-start;
 background:#0F298B;
 color:#FFFFFF;
 height:100%;
 min-height: 607px;
 flex-wrap:wrap;
-gap:4em;
+gap:4em 10em;
 
-/* @media (max-width:720px){
-    flex-direction:column;
-    grid-template-columns:1fr;
-    padding:6em 2em;
-    height:100%;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(1fr, 200px))
-   } */
+@media (min-width:720px){
+    padding:6em 4em;
+    }
 `
 
 const Wrapper = styled(Container)`
@@ -83,10 +77,10 @@ padding:0;
 const LinkWrapper = styled(Container)`
 padding:0;
 align-items:flex-start;
-justify-content:space-between;
+justify-content:flex-start;
 flex-wrap:wrap;
 max-width:912px;
-gap:4em;
+gap:4em 5em;
 `
 
 const Link = styled.a`

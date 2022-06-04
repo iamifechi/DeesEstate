@@ -67,10 +67,12 @@ text-align:center;
 
 const Card = styled(Cards)`
 justify-content: space-between;
+width:30vw;
 min-width:250px;
 max-width: 453.15px;
 height: 238.09px;
 height:fit-content;
+flex:1;
 `
 
 const Button = styled(BTN)`

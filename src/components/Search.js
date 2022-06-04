@@ -37,19 +37,28 @@ justify-content:flex-start;
 align-items:flex-start;
 gap:.4vmax;
 
-& ${Button}{
+&${Button}{
 margin:1em;
 }
+
+
 & ${Container}{
     width:100%;
-    p{
+
+    ${Title}{
         display:flex;
         align-items:center;
         justify-content:space-between;
     }   
 
     @media screen and (min-width:768px){
+        width:fit-content;
         max-width:250px;
+
+        
+        ${Title}{
+            display:block;
+        }   
     }
 
 }
@@ -67,14 +76,15 @@ margin:1em;
         margin:0;
     }
 
-    & ${Container}{
+    /* & ${Container}{
         padding:1em 0;
         width:fit-content;
         max-width:250px !important;
-        p{
+
+        ${Title}{
             display:block
         }
-    }
+    } */
     
 }
 `

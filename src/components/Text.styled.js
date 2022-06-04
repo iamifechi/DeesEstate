@@ -49,7 +49,7 @@ font-size: ${({size})=> size ? `calc(${size/0.24}% + 0px)` : `calc(${36/0.24}% +
 
 export const Title = styled(Paragraph)`
 font-weight:700;
-font-size: 16px;
+font-size: calc(100% + 0px);
 
 /* @media screen and (max-width:768px){
     font-size: 24px;
@@ -61,18 +61,12 @@ font-size: 16px;
 export const Text = styled(Paragraph)`
 font-weight:${({bold})=> bold ? '500' : '400'};
 font-style: normal;
-//font-size: ${({large})=> large ? '32px' : '24px'};
 font-size: ${({large})=> large ? '133%' : '100%'};
-//font-size: ${({large})=> large ? `${clamp(32)}`: `${clamp(24)}`};
-//line-height: ${({large,height})=> large ? '41px' : height ? height : '31px'};
 `
 
 export const SmallText = styled(Paragraph)`
 font-weight: ${({bold})=> bold ? '600' : '400'};
-//font-size: ${({size})=> size ? `${(size * 100)/24}px` : '18.6868px'};
 font-size: ${({size})=> size ? `calc(${size/0.24}% + 0px)` : `calc(${18.6868/0.24}% + 0px)`};
-//font-size: ${({size})=> size ? `${clamp(size)}`: `${clamp(18.6868)}`};
-////line-height: ${({size})=> size ? `${clamp(29)}`: `${clamp(25)}`};
 `
 export const SpanText = styled.span`
 color:${({primary})=> primary ? '#0F298B' : 'inherit'};
