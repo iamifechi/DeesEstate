@@ -10,6 +10,8 @@ export default function AboutUS() {
       flex
       Justify="space-between"
       padding="3em 5em"
+      className='about'
+      gap='3em'
     >
         <ImageWrapper/>
         <ContentWrapper grid>
@@ -48,12 +50,19 @@ export default function AboutUS() {
 
 const ImageWrapper = styled.div`
 background:url(${About}) no-repeat;
+background-size:contain;
+background-position:center;
 width:100%;
 max-width:736px;
 height:511px;
+
+@media screen and (max-width:999px){
+display:none;
+}
 `
 const ContentWrapper = styled(TextWrapper)`
 align-content: center;
+max-width: 600px;
 `
 
 const Title = styled(Heading)`

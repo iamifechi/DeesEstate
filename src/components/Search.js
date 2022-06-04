@@ -6,16 +6,16 @@ import {Arrow_Down, Search as search_icon} from '../assets/index'
 
 export default function Search( ){
  return(
-     <Wrapper flex Justify="space-between" Align="center">
-        <Container fit padding="1em">
+     <Wrapper className="search" flex>
+        <Container padding="1em">
             <Title primary>Location{" "}<Icon image={Arrow_Down}/></Title>
             <Text>Lekki</Text>
         </Container>
-        <Container fit padding="1em">
+        <Container padding="1em">
             <Title primary>Property Type{" "}<Icon image={Arrow_Down}/></Title>
             <Text>Duplex</Text>
         </Container>
-        <Container fit padding="1em">
+        <Container padding="1em">
             <Title primary>Max Price{" "}<Icon image={Arrow_Down}/></Title>
             <Text>$10,000</Text>
         </Container>
@@ -26,9 +26,55 @@ export default function Search( ){
 
 const Wrapper = styled(Section)`
 margin:1em auto;
-padding: 1em 3em;
+padding: 1em 2vmax;
 background: #FFFFFF;
 box-shadow: 24px 24px 48px rgba(37, 73, 211, 0.05);
 border-radius: 28px;
-max-width:1295px;;
+flex-direction:column;
+flex-wrap:wrap;
+width:80%;
+justify-content:flex-start;
+align-items:flex-start;
+gap:.4vmax;
+
+& ${Button}{
+margin:1em;
+}
+
+
+& ${Container}{
+    width:100%;
+
+    ${Title}{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }   
+
+   
+
+}
+
+@media screen and (min-width:768px){
+    width:90%;
+    padding: 1em 3em;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:1vmax;
+    max-width:1295px;
+    
+    & ${Button}{
+        margin:0;
+    }
+    & ${Container}{
+        width:fit-content;
+        max-width:260px;
+    
+        ${Title}{
+            display:block;
+        }   
+    }
+   
+}
 `
